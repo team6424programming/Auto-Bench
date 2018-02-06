@@ -124,11 +124,27 @@ AddOutputFilter chunkFilter
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
+			<Item Name="Servo Test 1.vi" Type="VI" URL="../Servo Test 1.vi"/>
 		</Item>
-		<Item Name="playback shoulder.vi" Type="VI" URL="../playback shoulder.vi"/>
+		<Item Name="Autonomous Playback" Type="Folder">
+			<Item Name="Floor Playback" Type="Folder">
+				<Item Name="Playback Floor.vi" Type="VI" URL="../Playback Floor.vi"/>
+				<Item Name="Switch to Scale.vi" Type="VI" URL="../Switch to Scale.vi"/>
+			</Item>
+			<Item Name="Arm Playback" Type="Folder">
+				<Item Name="Playback Wrist to Switch Auto.vi" Type="VI" URL="../Playback Wrist to Switch Auto.vi"/>
+				<Item Name="Delivery Playback.vi" Type="VI" URL="../Delivery Playback.vi"/>
+				<Item Name="Wrist Delivery Playback.vi" Type="VI" URL="../Wrist Delivery Playback.vi"/>
+			</Item>
+		</Item>
+		<Item Name="User-assist Playback" Type="Folder">
+			<Item Name="playback shoulder.vi" Type="VI" URL="../playback shoulder.vi"/>
+			<Item Name="playback wrist.vi" Type="VI" URL="../playback wrist.vi"/>
+		</Item>
+		<Item Name="Record Floor X.vi" Type="VI" URL="../Record Floor X.vi"/>
+		<Item Name="Record Floor Y.vi" Type="VI" URL="../Record Floor Y.vi"/>
 		<Item Name="record shoulder.vi" Type="VI" URL="../record shoulder.vi"/>
 		<Item Name="record wrist please.vi" Type="VI" URL="../record wrist please.vi"/>
-		<Item Name="playback wrist.vi" Type="VI" URL="../playback wrist.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="limitron.vi" Type="VI" URL="../limitron.vi"/>
 		<Item Name="globals.vi" Type="VI" URL="../globals.vi"/>
@@ -788,6 +804,12 @@ AddOutputFilter chunkFilter
 				<Item Name="NetComm_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Receive.vi"/>
 				<Item Name="WPI_CAN_PDPReceive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PDP/WPI_CAN_PDPReceive.vi"/>
 				<Item Name="WPI_Power Get PDP Currents.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Power/WPI_Power Get PDP Currents.vi"/>
+				<Item Name="WPI_DigitalInputRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputRefNum Registry Set.vi"/>
+				<Item Name="WPI_DriverStationGame Specific Data.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGame Specific Data.vi"/>
+				<Item Name="WPI_AnalogChannelGetAverageVoltage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/WPI_AnalogChannelGetAverageVoltage.vi"/>
+				<Item Name="WPI_AnalogModuleGetAverageVoltage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogModule/WPI_AnalogModuleGetAverageVoltage.vi"/>
+				<Item Name="FPGA_AIReadOversampleBits.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadOversampleBits.vi"/>
+				<Item Name="FPGA_AIReadAveraged.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadAveraged.vi"/>
 			</Item>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -827,7 +849,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
